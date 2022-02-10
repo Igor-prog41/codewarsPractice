@@ -23,3 +23,17 @@ function squareDigits(num){
   }
   return +digitsSquare.join('');
 }
+
+function disemvowel(str) {
+  const strToArr = str.split('');
+  const strOut = [];
+  for (let i=0; i< strToArr.length; i++){
+    if ( strToArr[i] !== 'a' && strToArr[i] !== 'o' &&strToArr[i] !== 'u' &&strToArr[i] !== 'e' &&strToArr[i] !== 'i'
+        && strToArr[i] !== 'A' && strToArr[i] !== 'O' && strToArr[i] !== 'U' && strToArr[i] !== 'E' && strToArr[i] !== 'I'){
+          strOut.push(strToArr[i]);
+        }
+  }
+  return strOut.join('');
+}
+
+ return str.replace(/[aeiou]/gi, '');
