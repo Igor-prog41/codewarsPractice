@@ -12,3 +12,14 @@ function repeatStr  (n, s) {
   }
   return out;
 }
+
+
+function squareDigits(num){
+  const  digits = num.toString().split('');
+  const  digitsSquare = [];
+  for (let i = 0 ; i < digits.length; i++){
+    const numSquare = +digits[i] * +digits[i];
+    digitsSquare.push(numSquare+'');
+  }
+  return +digitsSquare.join('');
+}
